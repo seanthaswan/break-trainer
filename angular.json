@@ -122,8 +122,13 @@
               "devServerTarget": "break-trainer:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "break-trainer"
 }

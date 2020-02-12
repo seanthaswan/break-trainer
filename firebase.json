@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "break-trainer",
+      "public": "dist/break-trainer",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

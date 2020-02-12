@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "break-trainer": {
+      "hosting": {
+        "break-trainer": [
+          "break-trainer"
+        ]
+      }
+    }
+  }
+}
