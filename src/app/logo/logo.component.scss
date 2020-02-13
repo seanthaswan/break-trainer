@@ -1,0 +1,35 @@
+.outer {
+  position: relative;
+  height: 150px;
+  width: 150px;
+
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  transform: rotate(45deg) skewX(-20deg) skewY(-10deg);
+
+}
+
+.tile {
+  background: white;
+
+  &.odd {
+    background: black;
+  }
+}
+
+.name {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  font-size: 50px;
+  font-family: "graffonti.gradient.fill";
+  text-align: center;
+  text-shadow: 1px 3px 1px white;
+}
