@@ -1,10 +1,69 @@
-.login-form-container {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 3px;
+h1 {
+  font-size: 60px;
 }
+
+h2 {
+  font-family: 'Sprite Graffiti';
+  color: white;
+  // background: black;
+  width: auto;
+  text-shadow: 0px 1px 8px black;
+  margin-bottom: 10px;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  p {
+    color: white;
+    text-shadow: 0px 1px 6px black;
+
+    width: 70%;
+    margin: 15px auto;
+  }
+}
+
+.registered-users-container {
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 
 .form {
   display: flex;
   flex-direction: column;
+}
+
+.button {
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .2s ease;
+  border: 2px solid transparent;
+
+  &.sign-in {
+    margin-bottom: 25px;
+    background-color: rgb(10, 189, 233);
+    color: white;
+
+    &:hover {
+      background-color: rgb(5, 127, 157);
+      border: 2px solid white;
+
+    }
+  }
+
+  &.create-account {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(10, 189, 233);
+    border: 3px solid rgb(10, 189, 233);
+
+    &:hover {
+      border: 3px solid white;
+      color: white;
+    }
+  }
 }

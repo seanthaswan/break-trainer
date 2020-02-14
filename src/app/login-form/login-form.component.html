@@ -1,13 +1,23 @@
 <div class="login-form-container">
-  <h1>Log In</h1>
-  <h2>Registered Users</h2>
-  <form action="" class="form">
-    <input type="text" /> <input type="password" />
-    <input type="submit" value="Log In" />
-  </form>
-  <h2>New Users</h2>
-  <form action="" class="form">
-    <input type="text" /> <input type="password" />
-    <input type="submit" value="Log In" />
-  </form>
+  <div class="registered-users-container">
+    <h2>Registered Users</h2>
+    <p>Have an account? Sign in now.</p>
+    <form *ngIf="false" action="" class="form">
+      <input type="text" /> <input type="password" />
+      <input type="submit" value="Log In" />
+    </form>
+    <button class="button sign-in" (click)="this.logIn($event)">
+      Sign In
+    </button>
+  </div>
+
+  <div class="new-users-container">
+    <h2>New Users</h2>
+    <p>New to Break Trainer? Create an account to get started.</p>
+    <form *ngIf="false" action="" class="form">
+      <input type="text" /> <input type="password" />
+      <input type="submit" value="Log In" />
+    </form>
+    <button class="button create-account">Create My Account</button>
+  </div>
 </div>
