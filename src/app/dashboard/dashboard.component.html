@@ -1,1 +1,20 @@
-<p>dashboard works!</p>
+<div class="dashboard-wrapper">
+  <div class="top">
+    <h1>Break HQ</h1>
+    <div class="date-container">
+      <p class="date">{{ today | date: "MMM dd, yyyy" }}</p>
+      <p class="time">{{ today | date: "HH:mm aa" }}</p>
+    </div>
+  </div>
+  <div class="action-card-container">
+    <div class="action-card">
+      <h2>Session Log</h2>
+    </div>
+    <div class="action-card">
+      <h2>Workouts & Drills</h2>
+    </div>
+    <div class="action-card">
+      <h2>Move Catalog</h2>
+    </div>
+  </div>
+</div>

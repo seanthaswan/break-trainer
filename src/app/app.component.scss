@@ -15,14 +15,20 @@
 
 .dashboard-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
   height: 100vh;
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/memphis-mini-dark.png");
+  background-image: url("../assets/dashboard-bg.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
   &.hidden {
     display: none;
   }
+}
+
+
+@font-face {
+  font-family: 'Sprite Graffiti Shadow';
+  src: url('../assets/SpriteGraffiti-Shadow.ttf');
 }
