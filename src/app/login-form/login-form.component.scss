@@ -3,7 +3,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'Sprite Graffiti';
   color: white;
   // background: black;
   width: auto;
@@ -19,8 +18,16 @@ h2 {
 
   p {
     color: white;
-    text-shadow: 0px 1px 6px black;
+    text-shadow:
+      2px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    font-family: "acgyosyo";
 
+    letter-spacing: -3px;
+    font-size: 25px;
     width: 70%;
     margin: 15px auto;
   }
@@ -43,6 +50,7 @@ h2 {
   font-size: 14px;
   transition: all .2s ease;
   border: 2px solid transparent;
+  text-transform: uppercase;
 
   &.sign-in {
     margin-bottom: 25px;

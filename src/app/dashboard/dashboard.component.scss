@@ -1,12 +1,13 @@
 .dashboard-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr;
-  height: 100vh;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+
 }
 
 h1 {
@@ -29,12 +30,38 @@ h2 {
   color: white;
   align-items: center;
   justify-content: space-between;
+  transition: all .2s ease;
+  padding: 20px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}
+
+.right {
+  display: flex;
 }
 
 .date-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-right: 15px;
+}
+
+.user-icon {
+  height: 30px;
+  min-width: 30px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all .2s ease;
+
+  &:hover {
+    border: 2px solid white;
+    cursor: pointer;
+  }
 }
 
 .date,
@@ -42,19 +69,62 @@ h2 {
   font-family: "Sprite Graffiti Shadow";
 }
 
+.middle {
+  flex: 1;
+  padding: 20px;
+
+}
+
 .action-card-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   color: white;
+
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
 }
 
 .action-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  align-items: center;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.25) 6px 8px 20px;
   color: rgb(255, 255, 255);
   margin-bottom: 10px;
+  margin-right: 5px;
   z-index: 1;
   border-radius: 15px;
   padding: 1em;
   transition: all 0.3s ease 0s;
+  border: 3px double black;
+
+  img {
+    height: 40px;
+    width: 40px;
+
+    margin: 10px auto;
+  }
+}
+
+.bottom {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "acgyosyo";
+  font-size: 25px;
+  text-shadow:
+    2px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: -3.7px;
 }

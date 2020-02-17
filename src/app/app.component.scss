@@ -19,7 +19,9 @@
   grid-template-rows: 1fr;
   justify-content: center;
   height: 100vh;
-  background-image: url("../assets/dashboard-bg.png");
+  background-image: url("../assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
   &.hidden {
