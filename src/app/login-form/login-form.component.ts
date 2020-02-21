@@ -14,7 +14,7 @@ export class LoginFormComponent implements OnInit {
     // TODO: Make work.
 
     console.log(e);
-    document.querySelector(".landing-container").classList.add("hidden");
-    document.querySelector(".dashboard-container").classList.remove("hidden");
+    document.querySelector("app-landing").classList.add("hidden");
+    document.querySelector("app-dashboard").classList.remove("hidden");
   }
 }

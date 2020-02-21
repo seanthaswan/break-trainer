@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { Quote } from "./Quote.model";
 
 @Component({
-  selector: "[app-dashboard]",
+  selector: "app-dashboard",
   templateUrl: "./dashboard.component.html",
   styleUrls: ["./dashboard.component.scss"]
 })

@@ -1,13 +1,26 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  // background-image: url("../assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  &.hidden {
+    display: none;
+  }
+}
+
 .dashboard-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.9);
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-
 }
 
 h1 {
@@ -65,9 +78,7 @@ h2 {
 }
 
 .date,
-.time {
-  font-family: "Sprite Graffiti Shadow";
-}
+.time {}
 
 .middle {
   flex: 1;
@@ -114,10 +125,8 @@ h2 {
 }
 
 .bottom {
-  background: rgba(0, 0, 0, 0.5);
   color: white;
-  font-family: "acgyosyo";
-  font-size: 25px;
+  font-size: 23px;
   text-shadow:
     2px 1px 0 #000,
     -1px -1px 0 #000,
@@ -126,5 +135,4 @@ h2 {
     1px 1px 0 #000;
   padding: 20px;
   text-align: center;
-  letter-spacing: -3.7px;
 }

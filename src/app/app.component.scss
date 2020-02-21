@@ -1,35 +1,3 @@
-.landing-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  height: 100vh;
-  background-color: rgba(51, 51, 51, 0.2);
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-  &.hidden {
-    display: none;
-  }
-}
-
-.dashboard-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  height: 100vh;
-  background-image: url("../assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
-  background-size: cover;
-  background-position: center center;
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-  &.hidden {
-    display: none;
-  }
-}
-
-
 @font-face {
   font-family: 'Sprite Graffiti Shadow';
   src: url('../assets/SpriteGraffiti-Shadow.ttf');
