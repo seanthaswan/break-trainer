@@ -1,1 +1,19 @@
-<p>header works!</p>
+<div class="header-container">
+  <div class="left">
+    <a class="title" [routerLink]="['/dashboard']">
+      <img src="../../assets/header-title.png" alt="" />
+    </a>
+  </div>
+  <div class="right">
+    <div class="date-container">
+      <p class="date">
+        {{ today | date: "MMM dd, yyyy" }}
+        {{ today ? "" : "Getting the time..." }}
+      </p>
+      <p class="time">{{ today | date: "hh:mm aa" }}</p>
+    </div>
+    <a class="user-icon" [routerLink]="['/profile']">
+      <img src="../../assets/user-icon.svg" alt="" />
+    </a>
+  </div>
+</div>

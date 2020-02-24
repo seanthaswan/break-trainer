@@ -1,32 +1,45 @@
-<div class="dashboard-wrapper">
-    <div class="top">
-        <div class="left">
-            <h1>Break HQ</h1>
+<div class="page-wrapper">
+  <app-header></app-header>
+  <div class="middle">
+    <h2 class="section-heading">How do you want to get down?</h2>
+    <div class="action-card-container">
+      <a
+        class="action-card"
+        [routerLink]="['/logs']"
+        routerLinkActive="router-link-active"
+      >
+        <div>
+          <h3>Session Log</h3>
+          <div class="card-icon">
+            <img src="../../assets/sessionlog.svg" alt="" />
+          </div>
         </div>
-        <div class="right">
-            <div class="date-container">
-                <p class="date">{{ today | date: "MMM dd, yyyy" }}</p>
-                <p class="time">{{ today | date: "HH:mm aa" }}</p>
-            </div>
-            <img class="user-icon" src="../../assets/user-icon.svg" alt="" />
+      </a>
+      <a
+        class="action-card"
+        [routerLink]="['/workout']"
+        routerLinkActive="router-link-active"
+      >
+        <div>
+          <h3>Workouts & Drills</h3>
+          <div class="card-icon">
+            <img src="../../assets/workout.svg" alt="" />
+          </div>
         </div>
+      </a>
+      <a
+        class="action-card"
+        [routerLink]="['/library']"
+        routerLinkActive="router-link-active"
+      >
+        <div>
+          <h3>Move Library</h3>
+          <div class="card-icon">
+            <img src="../../assets/library.svg" alt="" />
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="middle">
-        <h2>How do you want to get down?</h2>
-        <div class="action-card-container">
-            <div class="action-card">
-                <h2>Session Log</h2>
-                <img src="../../assets/sessionlog.svg" alt="" />
-            </div>
-            <div class="action-card">
-                <h2>Workouts & Drills</h2>
-                <img src="../../assets/workout.svg" alt="" />
-            </div>
-            <div class="action-card">
-                <h2>Move Catalog</h2>
-                <img src="../../assets/catalog.svg" alt="" />
-            </div>
-        </div>
-    </div>
-    <div class="bottom">{{ currentQuote.quote }} {{ currentQuote.author }}</div>
+  </div>
+  <div class="bottom">{{ currentQuote.quote }} {{ currentQuote.author }}</div>
 </div>

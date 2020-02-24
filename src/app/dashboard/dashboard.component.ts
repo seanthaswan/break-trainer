@@ -384,12 +384,10 @@ export class DashboardComponent implements OnInit {
   ];
 
   currentQuote: {};
-  today: number;
 
   constructor() {}
 
   ngOnInit() {
-    this.today = Date.now();
     this.currentQuote = this.quotes[
       Math.floor(Math.random() * this.quotes.length)
     ];

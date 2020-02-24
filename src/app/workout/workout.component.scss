@@ -1,0 +1,20 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Thank You Kobe";
+  letter-spacing: 1px;
+
+  background-color: black;
+  // background-image: url("../assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  overflow: scroll;
+
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  &.hidden {
+    display: none;
+  }
+}

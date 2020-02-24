@@ -15,8 +15,15 @@ app-root {
 
 body {
   background-color: rgba(0, 0, 0, .4);
-  background-image: url('assets/landing-hero-bg.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: url('assets/landing-hero-bg.jpg') center center no-repeat;
   background-size: cover;
+}
+
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
