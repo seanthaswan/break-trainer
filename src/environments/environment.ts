@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
+  firebase: {
     apiKey: "AIzaSyAGWpYw5ddZDGmVLLUN1ro44Hjsxl6n9Ng",
     authDomain: "break-trainer.firebaseapp.com",
     databaseURL: "https://break-trainer.firebaseio.com",

@@ -1,8 +1,8 @@
 <div class="page-wrapper">
   <app-header></app-header>
   <ul>
-    <li class="text" *ngFor="let item of items | async">
-      {{ item.name }}
+    <li class="text" *ngFor="let logEntry of logEntries">
+      {{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}
     </li>
   </ul>
 </div>

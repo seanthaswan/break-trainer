@@ -1,19 +1,22 @@
 .outer {
   position: relative;
-  height: 150px;
-  width: 150px;
 
+  width: 150px;
+  height: 150px;
 }
 
 .inner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+
   width: 100px;
   height: 100px;
-  border: 1px solid white;
+
   transform: rotate(45deg) skewX(-20deg) skewY(-10deg);
 
+  border: 1px solid white;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .tile {
@@ -25,11 +28,14 @@
 }
 
 .name {
+  font-family: "graffonti.gradient.fill";
+  font-size: 50px;
+
   position: absolute;
   top: 0;
   left: -50%;
-  font-size: 50px;
-  font-family: "graffonti.gradient.fill";
+
   text-align: center;
+
   text-shadow: 1px 3px 1px white;
 }

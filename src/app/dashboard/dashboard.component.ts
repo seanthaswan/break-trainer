@@ -382,6 +382,7 @@ export class DashboardComponent implements OnInit {
       " Rabk"
     )
   ];
+  sectionTagLine: string = "How do you want to get down?";
 
   currentQuote: {};
 

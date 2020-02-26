@@ -12,9 +12,10 @@ import { LoginFormComponent } from "./login-form/login-form.component";
 import { SessionLogComponent } from "./session-log/session-log.component";
 import { WorkoutComponent } from "./workout/workout.component";
 import { LibraryComponent } from "./library/library.component";
-import { AngularFireModule } from "@angular/fire";
-import { AngularFirestore } from "@angular/fire/firestore";
-
+import { FormsModule } from "@angular/forms";
+import { AngularFireModule } from "angularfire2";
+// for AngularFireDatabase
+import { AngularFireDatabaseModule } from "angularfire2/database";
 import { environment } from "../environments/environment";
 
 @NgModule({
@@ -33,9 +34,10 @@ import { environment } from "../environments/environment";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
-  providers: [AngularFirestore],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

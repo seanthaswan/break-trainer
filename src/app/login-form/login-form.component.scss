@@ -3,39 +3,37 @@ h1 {
 }
 
 h2 {
-  color: white;
   // background: black;
   width: auto;
-  text-shadow: 0px 1px 8px black;
   margin-bottom: 10px;
+
+  color: white;
+  text-shadow: 0 1px 8px black;
 }
 
 .login-form-container {
   display: flex;
   flex-direction: column;
+
   align-items: center;
 
-
   p {
-    color: white;
-    text-shadow:
-      2px 1px 0 #000,
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
-
     font-size: 22px;
+
     width: 70%;
     margin: 15px auto;
+
+    color: white;
+    text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
   }
 }
 
 .registered-users-container {
   margin-bottom: 25px;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-
 
 .form {
   display: flex;
@@ -43,33 +41,35 @@ h2 {
 }
 
 .button {
-  border-radius: 2px;
-  font-weight: bold;
   font-size: 14px;
-  transition: all .2s ease;
-  border: 2px solid transparent;
+  font-weight: bold;
+
+  transition: all 0.2s ease;
   text-transform: uppercase;
+
+  border: 2px solid transparent;
+  border-radius: 2px;
 
   &.sign-in {
     margin-bottom: 25px;
-    background-color: rgb(10, 189, 233);
+
     color: white;
+    background-color: rgb(10, 189, 233);
 
     &:hover {
-      background-color: rgb(5, 127, 157);
       border: 2px solid white;
-
+      background-color: rgb(5, 127, 157);
     }
   }
 
   &.create-account {
-    background-color: rgba(0, 0, 0, 0.8);
     color: rgb(10, 189, 233);
     border: 3px solid rgb(10, 189, 233);
+    background-color: rgba(0, 0, 0, 0.8);
 
     &:hover {
-      border: 3px solid white;
       color: white;
+      border: 3px solid white;
     }
   }
 }
