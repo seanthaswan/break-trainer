@@ -1,121 +1,132 @@
-:host {
-  font-family: "Thank You Kobe";
+:host
+{
+    font-family: 'Thank You Kobe';
 
-  display: grid;
-  overflow: scroll;
+    display: grid;
+    overflow: scroll;
+    justify-content: center;
 
-  height: 100vh;
+    height: 100vh;
 
-  letter-spacing: 1px;
+    letter-spacing: 1px;
 
-  background-color: black;
-  background-position: center center;
-  background-size: cover;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
 
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 
-  &.hidden {
-    display: none;
-  }
-}
-
-.action-card-container {
-  display: flex;
-
-  justify-content: space-between;
-
-  @media (max-width: 500px) {
-    flex-direction: column;
-
-    margin-bottom: 20px;
-  }
-}
-
-.action-card {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-
-  max-width: 30%;
-  min-height: 350px;
-  padding: 1em;
-
-  transition: all 0.3s ease 0s;
-  text-align: center;
-  text-decoration: none;
-
-  border: 2px solid rgb(249, 211, 66);
-  border-radius: 10px;
-  background-color: #292825;
-  box-shadow: 0 2px 7px rgba(255, 255, 255, 0.5);
-
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-6px);
-
-    box-shadow: 0 5px 8px rgba(249, 211, 66, 0.6);
-
-    .card-icon {
-      border: 3px double rgb(213, 182, 56);
+    &.hidden
+    {
+        display: none;
     }
-  }
-
-  @media (max-width: 500px) {
-    max-width: 100%;
-    min-height: 200px;
-    margin-bottom: 20px;
-  }
 }
 
-.card-title {
-  font-size: 28px;
+.action-card-container
+{
+    display: flex;
+    justify-content: space-between;
 
-  text-transform: uppercase;
 
-  color: #f9d342;
+    @media (max-width: 900px)
+    {
+        flex-direction: column;
+
+        height: 80%;
+        margin-bottom: 20px;
+    }
 }
 
-.card-icon {
-  position: absolute;
-  right: -15px;
-  bottom: -15px;
+.action-card
+{
+    position: relative;
+    z-index: 1;
 
-  display: flex;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
 
-  width: 100px;
-  height: 100px;
+    max-width: 30%;
+    min-height: 350px;
+    padding: 1em;
 
-  transition: border 0.3s ease;
+    transition: all .3s ease 0s;
+    text-align: center;
+    text-decoration: none;
 
-  border: 3px double transparent;
-  border-radius: 50%;
-  background: #f9d342;
+    border: 2px solid rgb(249, 211, 66);
+    border-radius: 10px;
+    background-color: #292825;
+    box-shadow: 0 2px 7px rgba(255, 255, 255, .5);
 
-  align-items: center;
-  justify-content: center;
+    &:hover
+    {
+        cursor: pointer;
+        transform: translateY(-6px);
 
-  img {
-    width: 50%;
-  }
+        box-shadow: 0 5px 8px rgba(249, 211, 66, .6);
+
+        .card-icon
+        {
+            border: 3px double rgb(213, 182, 56);
+        }
+    }
+
+    @media (max-width: 900px)
+    {
+        max-width: 100%;
+        min-height: 200px;
+        margin-bottom: 20px;
+    }
 }
 
-.bottom {
-  font-size: 23px;
+.card-title
+{
+    font-size: 28px;
 
-  padding: 20px;
+    text-transform: uppercase;
 
-  text-align: center;
+    color: #f9d342;
+}
 
-  color: white;
-  text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+.card-icon
+{
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+
+    transition: border .3s ease;
+
+    border: 3px double transparent;
+    border-radius: 50%;
+    background: #f9d342;
+
+    img
+    {
+        width: 50%;
+    }
+}
+
+.bottom
+{
+    font-size: 23px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: white;
+    text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
 }

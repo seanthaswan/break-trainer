@@ -3,7 +3,6 @@ import "firebase/database";
 import { AngularFireModule } from "@angular/fire";
 import {
   AngularFireDatabase,
-  FirebaseListObservable
 } from "angularfire2/database";
 import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { Observable, ObservableLike } from "rxjs";

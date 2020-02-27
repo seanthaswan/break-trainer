@@ -1,8 +1,26 @@
 <div class="page-wrapper">
   <app-header></app-header>
-  <ul>
-    <li class="text" *ngFor="let logEntry of logEntries">
-      {{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}
-    </li>
-  </ul>
+  <div class="journal-container">
+    <div class="log-item-container">
+      <div class="log-item" *ngFor="let logEntry of logEntries">
+        <div class="date">{{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}</div>
+        <div class="location">{{ logEntry.location }}</div>
+      </div>
+      <div class="log-item selected" *ngFor="let logEntry of logEntries">
+        <div class="date">{{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}</div>
+        <div class="location">{{ logEntry.location }}</div>
+      </div>
+      <div class="log-item" *ngFor="let logEntry of logEntries">
+        <div class="date">{{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}</div>
+        <div class="location">{{ logEntry.location }}</div>
+      </div>
+      <div class="log-item" *ngFor="let logEntry of logEntries">
+        <div class="date">{{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}</div>
+        <div class="location">{{ logEntry.location }}</div>
+      </div>
+    </div>
+    <div class="log-item-viewer">
+      Select a log item to view.
+    </div>
+  </div>
 </div>
