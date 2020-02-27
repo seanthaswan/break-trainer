@@ -14,6 +14,7 @@ import { Observable, ObservableLike } from "rxjs";
 })
 export class SessionLogComponent implements OnInit {
   title: string = "Session Log";
+  sectionHeading: string = "Log your seshes, track your progress, party.";
   username: string = "sswanson";
   itemValue = "";
   itemList: Observable<any[]>;
