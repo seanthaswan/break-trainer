@@ -19,6 +19,7 @@ export class SessionLogComponent implements OnInit {
   itemValue = "";
   itemList: Observable<any[]>;
   logEntries: any[] = [];
+  selectedEntry: object; 
 
   constructor(public db: AngularFireDatabase) {
     // To get the data from Firebase, we first create a reference to the list.
@@ -29,10 +30,22 @@ export class SessionLogComponent implements OnInit {
       res.forEach(i => {
         this.logEntries.push(i);
       });
+      console.log(this.logEntries);
     });
   }
 
   ngOnInit() {
-    // console.log(this.items);
+  }
+
+  handleLogEntryClick = (e) => {
+    this.selectedEntry = {};
+    let selectedLogTimestamp = parseInt(e.target.dataset.entryDate,10);
+
+    this.logEntries.map((entry) => {
+      if (entry.date === selectedLogTimestamp) {
+        this.selectedEntry = entry;
+        console.log(this.selectedEntry);
+      } 
+    })
   }
 }
