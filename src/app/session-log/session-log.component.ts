@@ -19,6 +19,7 @@ export class SessionLogComponent implements OnInit {
   logEntries: any[] = [];
   selectedEntry: object;
 
+  //----------
   constructor(public db: AngularFireDatabase) {
     // To get the data from Firebase, we first create a reference to the list.
     // ... Then we create the observable for that reference.
@@ -32,17 +33,66 @@ export class SessionLogComponent implements OnInit {
     });
   }
 
+  //----------
   ngOnInit() {}
 
+  //----------
   handleLogEntryClick = e => {
     this.selectedEntry = {};
     let selectedLogTimestamp = parseInt(e.target.dataset.entryDate, 10);
 
+    // Using the date from list of log entries, find the corresponding full entry.
     this.logEntries.map(entry => {
       if (entry.date === selectedLogTimestamp) {
+        let parsedDuration = this.parseDuration(entry.duration);
         this.selectedEntry = entry;
+        this.selectedEntry.duration = parsedDuration;
         console.log(this.selectedEntry);
       }
     });
   };
+
+  //----------
+  parseDuration(duration) {
+    console.log(duration.includes(":"));
+    if (!duration.includes(":")) {
+      return duration;
+    }
+
+    let oldDuration = duration.split(":");
+
+    oldDuration[0] =
+      parseInt(oldDuration[0], 10) > 1
+        ? (oldDuration[0] += "hrs")
+        : (oldDuration[0] += "hr");
+
+    oldDuration[0] = this.stripLeadingZero(oldDuration[0]);
+
+    oldDuration[1] =
+      parseInt(oldDuration[1], 10) > 1
+        ? (oldDuration[1] += "mins")
+        : (oldDuration[1] += "min");
+
+    oldDuration[1] = this.stripLeadingZero(oldDuration[1]);
+
+    oldDuration.pop();
+
+    return oldDuration.join("");
+  }
+
+  //----------
+  stripLeadingZero(time) {
+    let oldTime = time.split("");
+    let strippedTime;
+
+    if (oldTime[0] != 0) {
+      return oldTime.join("");
+    }
+
+    strippedTime = oldTime;
+    strippedTime.shift();
+    strippedTime = strippedTime.join("");
+
+    return strippedTime;
+  }
 }

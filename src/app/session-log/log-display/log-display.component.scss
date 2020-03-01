@@ -1,0 +1,109 @@
+.log-display-container {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+  position: relative;
+
+  display: flex;
+
+  height: 100%;
+  padding: 40px;
+
+  color: #141823;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+}
+
+.no-selection-prompt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.log-display {
+  width: 100%;
+}
+
+.log-header {
+  position: relative;
+
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px dotted black;
+  .log-date {
+    font-size: 29px;
+  }
+
+  .log-location {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .log-duration {
+    font-size: 11px;
+
+    position: absolute;
+    right: 75px;
+    bottom: 1px;
+
+    display: flex;
+
+    width: 10px;
+
+    align-items: center;
+  }
+
+  .at-sign {
+    font-size: 25px;
+    font-style: normal;
+  }
+}
+
+.log-lists {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  div {
+    width: 48%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    transition: all 0.2s ease;
+
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    @media (max-width: 700px) {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .list-heading {
+    margin-bottom: 5px;
+
+    text-align: center;
+  }
+
+  .list-description {
+    font-size: 13px;
+
+    margin: 0;
+
+    text-align: center;
+
+    opacity: 0.75;
+  }
+
+  .list {
+    font-size: 15px;
+  }
+}

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EntryViewComponent } from './entry-view.component';
+import { LogDisplayComponent } from './log-display.component';
 
-describe('EntryViewComponent', () => {
-  let component: EntryViewComponent;
-  let fixture: ComponentFixture<EntryViewComponent>;
+describe('LogDisplayComponent', () => {
+  let component: LogDisplayComponent;
+  let fixture: ComponentFixture<LogDisplayComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EntryViewComponent ]
+      declarations: [ LogDisplayComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EntryViewComponent);
+    fixture = TestBed.createComponent(LogDisplayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

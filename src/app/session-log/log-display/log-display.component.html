@@ -1,0 +1,32 @@
+<div class="log-display-container">
+  <p class="no-selection-prompt" *ngIf="!entry">Select a log item to view.</p>
+  <div class="log-display" *ngIf="entry">
+    <div class="log-header">
+      <div class="log-date">{{ entry.date | date: "MMMM dd, yyyy" || "Date of session"}}</div>
+      <div class="log-location">
+        <span class="at-sign">@</span>
+        {{entry.location || "Location"}}
+      </div>
+      <div class="log-duration">
+        <img src="../../assets/duration.svg" alt="">
+        {{entry.duration || "Session time" }}
+      </div>
+    </div>
+    <div class="log-lists">
+      <div class="victories">
+        <h3 class="list-heading">Victories</h3>
+        <p class="list-description">Things to celebrate 🎉</p>
+        <ol class="list">
+          <li *ngFor="let victory of entry.victories">{{victory}}</li>
+        </ol>
+      </div>
+      <div class="challenges">
+        <h3 class="list-heading">Challenges</h3>
+        <p class="list-description">Things to work on 🤔</p>
+        <ol class="list">
+          <li *ngFor="let challenge of entry.challenges">{{challenge}}</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
