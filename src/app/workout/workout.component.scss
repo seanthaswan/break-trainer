@@ -3,22 +3,26 @@
 
   display: grid;
   overflow: scroll;
+  justify-content: center;
 
   height: 100vh;
 
   letter-spacing: 1px;
 
-  background-color: black;
+  // background-image: url("../../assets/dashboard-bg.png");
+
+  background-image: url("../../assets/dashboard-bg-4.png");
   background-position: center center;
+  background-repeat: repeat;
+  background-size: 23%;
   // background-image: url("../assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
-  background-size: cover;
 
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  justify-content: center;
 
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   &.hidden {
     display: none;
   }
+  z-index: 999;
 }

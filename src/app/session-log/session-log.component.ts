@@ -1,9 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import "firebase/database";
 import { AngularFireModule } from "@angular/fire";
-import {
-  AngularFireDatabase,
-} from "angularfire2/database";
+import { AngularFireDatabase } from "angularfire2/database";
 import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { Observable, ObservableLike } from "rxjs";
 
@@ -14,12 +12,12 @@ import { Observable, ObservableLike } from "rxjs";
 })
 export class SessionLogComponent implements OnInit {
   title: string = "Session Log";
-  sectionHeading: string = "Log your seshes, track your progress, party.";
+  sectionHeading: string = "Log your sesh. Track your progress. Party.";
   username: string = "sswanson";
   itemValue = "";
   itemList: Observable<any[]>;
   logEntries: any[] = [];
-  selectedEntry: object; 
+  selectedEntry: object;
 
   constructor(public db: AngularFireDatabase) {
     // To get the data from Firebase, we first create a reference to the list.
@@ -34,18 +32,17 @@ export class SessionLogComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  handleLogEntryClick = (e) => {
+  handleLogEntryClick = e => {
     this.selectedEntry = {};
-    let selectedLogTimestamp = parseInt(e.target.dataset.entryDate,10);
+    let selectedLogTimestamp = parseInt(e.target.dataset.entryDate, 10);
 
-    this.logEntries.map((entry) => {
+    this.logEntries.map(entry => {
       if (entry.date === selectedLogTimestamp) {
         this.selectedEntry = entry;
         console.log(this.selectedEntry);
-      } 
-    })
-  }
+      }
+    });
+  };
 }
