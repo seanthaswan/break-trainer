@@ -1,7 +1,5 @@
 :host {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   margin-bottom: 15px;
   padding: 20px;
@@ -10,6 +8,9 @@
 
   color: white;
   border-bottom: 1px dotted #f9d342;
+
+  align-items: center;
+  justify-content: space-between;
 
   @media (max-width: 500px) {
     flex-direction: column;
@@ -23,7 +24,7 @@
 }
 
 .right {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
   display: flex;
   visibility: visible;
@@ -39,15 +40,16 @@
 
 .date-container {
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
 
   margin-right: 15px;
 
-  @media (max-width: 500px) {
-    align-items: center;
+  align-items: flex-end;
 
+  @media (max-width: 500px) {
     margin: 0;
+
+    align-items: center;
   }
 }
 

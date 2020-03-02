@@ -12,6 +12,7 @@ import { LoginFormComponent } from "./login-form/login-form.component";
 import { SessionLogComponent } from "./session-log/session-log.component";
 import { WorkoutComponent } from "./workout/workout.component";
 import { LibraryComponent } from "./library/library.component";
+import { LogDisplayComponent } from "./session-log/log-display/log-display.component";
 import { FormsModule } from "@angular/forms";
 import { AngularFireModule } from "angularfire2";
 // for AngularFireDatabase
@@ -29,7 +30,8 @@ import { environment } from "../environments/environment";
     LoginFormComponent,
     SessionLogComponent,
     WorkoutComponent,
-    LibraryComponent
+    LibraryComponent,
+    LogDisplayComponent
   ],
   imports: [
     BrowserModule,
