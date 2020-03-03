@@ -23,6 +23,7 @@ export class SessionLogComponent implements OnInit {
     location: string;
     victories: any[];
     challenges: any[];
+    notes: string;
   };
 
   //----------
@@ -49,18 +50,21 @@ export class SessionLogComponent implements OnInit {
       location: "",
       duration: "",
       victories: [],
-      challenges: []
+      challenges: [],
+      notes: ""
     };
+
     let selectedLogTimestamp = parseInt(e.target.dataset.entryDate, 10);
     let journalDisplay = document.querySelector(".log-display-container");
     let sessionLogContainer = document.querySelector("app-session-log");
-    let sessionLogOffsetTop = sessionLogContainer.offsetTop;
+    let sessionLogOffsetTop = sessionLogContainer.scrollTop;
     journalDisplay.classList.add("display-active");
     sessionLogContainer.scroll({
       top: 20,
       left: sessionLogOffsetTop,
       behavior: "smooth"
     });
+    
     // Using the date from list of log entries, find the corresponding full entry.
     this.logEntries.map(entry => {
       if (entry.date === selectedLogTimestamp) {
