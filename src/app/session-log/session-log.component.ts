@@ -17,7 +17,13 @@ export class SessionLogComponent implements OnInit {
   itemValue = "";
   itemList: Observable<any[]>;
   logEntries: any[] = [];
-  selectedEntry : {duration:string, date: string, location: string, victories: any[], challenges: any[]};
+  selectedEntry: {
+    duration: string;
+    date: string;
+    location: string;
+    victories: any[];
+    challenges: any[];
+  };
 
   //----------
   constructor(public db: AngularFireDatabase) {
@@ -38,9 +44,23 @@ export class SessionLogComponent implements OnInit {
 
   //----------
   handleLogEntryClick = e => {
-    this.selectedEntry = {date: '', location: '', duration: '', victories: [], challenges: []};
+    this.selectedEntry = {
+      date: "",
+      location: "",
+      duration: "",
+      victories: [],
+      challenges: []
+    };
     let selectedLogTimestamp = parseInt(e.target.dataset.entryDate, 10);
-
+    let journalDisplay = document.querySelector(".log-display-container");
+    let sessionLogContainer = document.querySelector("app-session-log");
+    let sessionLogOffsetTop = sessionLogContainer.offsetTop;
+    journalDisplay.classList.add("display-active");
+    sessionLogContainer.scroll({
+      top: 20,
+      left: sessionLogOffsetTop,
+      behavior: "smooth"
+    });
     // Using the date from list of log entries, find the corresponding full entry.
     this.logEntries.map(entry => {
       if (entry.date === selectedLogTimestamp) {

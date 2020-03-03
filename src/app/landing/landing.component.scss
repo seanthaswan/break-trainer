@@ -1,148 +1,133 @@
-:host
-{
-    display: grid;
-    -webkit-box-pack: center;
-    justify-content: center;
+:host {
+  display: grid;
+  -webkit-box-pack: center;
+  justify-content: center;
 
-    height: 100vh;
+  height: 100vh;
 
-    background: url(../../assets/landing-hero-bg.jpg) center right no-repeat;
-    background-size: cover;
+  background: url(../../assets/landing-hero-bg.jpg) center right no-repeat;
+  background-size: cover;
 
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
 
-    @media (max-width: 500px)
-    {
-        background: black;
+  @media (max-width: 500px) {
+    background: black;
 
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+  }
 
-    &.hidden
-    {
-        display: none;
-    }
+  &.hidden {
+    display: none;
+  }
 }
 
-.left
-{
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"),
+    linear-gradient(to bottom, #4268f9, black);
+
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+  background-color: rgba(51, 51, 51, 0.1);
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-position: center center; /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+h2 {
+  // background: black;
+  width: auto;
+  margin-bottom: 10px;
+
+  color: white;
+  text-shadow: 0 1px 8px black;
+}
+
+.login-form-container {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+
+  div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    border-right: 1px solid rgba(0, 0, 0, .2);
-    background: rgba(0, 0, 0, .85);
-    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
-}
+    width: 80%;
+    margin: 0 auto;
+  }
 
-.right
-{
-    background-color: rgba(51, 51, 51, .1);
-    background-image: url('https://www.transparenttextures.com/patterns/concrete-wall-2.png');
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    @media (max-width: 500px)
-    {
-        display: none;
-    }
-}
-
-h2
-{
-    // background: black;
-    width: auto;
-    margin-bottom: 10px;
+  p {
+    font-size: 16px;
 
     color: white;
-    text-shadow: 0 1px 8px black;
+    text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
+  }
 }
 
-.login-form-container
-{
-    display: grid;
+.registered-users-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
 
-    grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
+.form {
+  display: flex;
+  flex-direction: column;
+}
 
-    div
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+.button {
+  font-size: 14px;
+  font-weight: bold;
 
-        width: 80%;
-        margin: 0 auto;
+  margin: 10px 0;
+  padding: 10px;
+
+  transition: all 0.2s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: 2px solid transparent;
+  border-radius: 2px;
+
+  &.sign-in {
+    color: white;
+    background-color: rgb(10, 189, 233);
+
+    &:hover {
+      border: 2px solid white;
+      background-color: rgb(5, 127, 157);
     }
+  }
 
-    p
-    {
-        font-size: 16px;
+  &.create-account {
+    color: rgb(10, 189, 233);
+    border: 3px solid rgb(10, 189, 233);
+    background-color: rgba(0, 0, 0, 0.8);
 
-        color: white;
-        text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-        -1px 1px 0 #000, 1px 1px 0 #000;
+    &:hover {
+      color: white;
+      border: 3px solid white;
     }
+  }
 }
 
-.registered-users-container
-{
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+.logo {
+  width: 300px;
+  margin: 0 auto;
 }
 
-.form
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.button
-{
-    font-size: 14px;
-    font-weight: bold;
-
-    margin: 10px 0;
-    padding: 10px;
-
-    transition: all .2s ease;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    border: 2px solid transparent;
-    border-radius: 2px;
-
-    &.sign-in
-    {
-        color: white;
-        background-color: rgb(10, 189, 233);
-
-        &:hover
-        {
-            border: 2px solid white;
-            background-color: rgb(5, 127, 157);
-        }
-    }
-
-    &.create-account
-    {
-        color: rgb(10, 189, 233);
-        border: 3px solid rgb(10, 189, 233);
-        background-color: rgba(0, 0, 0, .8);
-
-        &:hover
-        {
-            color: white;
-            border: 3px solid white;
-        }
-    }
-}
-
-.logo
-{
-    width: 300px;
-    margin: 0 auto;
-}
-
-.logo img
-{
-    width: 100%;
+.logo img {
+  width: 100%;
 }

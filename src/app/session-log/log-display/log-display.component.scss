@@ -8,19 +8,40 @@
   height: 100%;
   padding: 40px;
 
+  transition: all 1s ease;
+
   color: #141823;
+  border-top: 1px dotted black;
+  border-right: 1px dotted black;
+  border-bottom: 1px dotted black;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   background-color: #fff;
   background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+
+  @media (max-width: 500px) {
+    justify-content: center;
+    max-height: 100px;
+    padding: 20px;
+    grid-row: 1;
+
+    &.display-active {
+      padding: 5px;
+      justify-content: initial;
+
+      max-height: 100vh;
+    }
+  }
 }
 
 .no-selection-prompt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  @media (min-width: 500px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 
 .log-display {
@@ -69,28 +90,37 @@
   flex-wrap: wrap;
 
   div {
+    display: flex;
+    flex-direction: column;
+
     width: 48%;
     margin: 0 auto;
     padding: 10px 0;
 
     transition: all 0.2s ease;
 
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 3px;
     background: rgba(0, 0, 0, 0.02);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    align-items: center;
 
     @media (max-width: 700px) {
       width: 100%;
-      padding: 10px;
       margin-bottom: 10px;
+      padding: 10px;
     }
   }
 
   .list-heading {
+    font-weight: bold;
+
     margin-bottom: 5px;
 
     text-align: center;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   }
 
   .list-description {
@@ -105,5 +135,52 @@
 
   .list {
     font-size: 15px;
+  }
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 98%;
+  margin: 10px auto;
+  padding: 10px;
+
+  transition: all 0.2s ease;
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+
+  .notes-heading {
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+    align-self: center;
+  }
+
+  .notes-description {
+    font-size: 13px;
+
+    margin: 0;
+
+    text-align: center;
+
+    opacity: 0.75;
+  }
+
+  .notes-body {
+    padding-left: 40px;
+    @media (max-width: 700px) {
+      padding-left: 10px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
   }
 }
