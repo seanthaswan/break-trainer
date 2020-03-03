@@ -13,19 +13,19 @@ export class DashboardComponent implements OnInit {
       "“A lot of it is mental you have to not fear your opponent. That’s the number one thing, first off. Don’t underestimate anybody, but don’t fear anybody.”",
       "- Roxrite"
     ),
-    // new Quote(
-    //   "“A lot of people say, what’s foundation and they think 6 step or 2 step, you know what, those are just basic moves. Foundation is your basic, your feeling, your self expression. That’s your foundation. Foundation is a feeling. You have to feel it first, with the move that you’re doing. If you’re doing a basic move and you don’t feel it that’s not your foundation. If you’re dancing to the music that means you feel it. My inspirations are the ones that inspire me to feel the music.”",
-    //   " - Bam Bam"
-    // ),
+    new Quote(
+      "“A lot of people say, what’s foundation and they think 6 step or 2 step, you know what, those are just basic moves. Foundation is your basic, your feeling, your self expression. That’s your foundation. Foundation is a feeling. You have to feel it first, with the move that you’re doing. If you’re doing a basic move and you don’t feel it that’s not your foundation. If you’re dancing to the music that means you feel it. My inspirations are the ones that inspire me to feel the music.”",
+      " - Bam Bam"
+    ),
     new Quote(
       "“A teacher is just a student who is farther along the path and can show the way. In every student is a master waiting to be born.”",
       " - Otis Funkmeyer"
     ),
     new Quote("“Always a student, never a master.”", " - Mr. Wiggles"),
-    // new Quote(
-    //   "“As far as being traditional, it’s not because people say there are set rules for the dance. That’s what we feel. We give respect to people who don’t really do traditional style moves. We give them props also. But that’s what we feel so that’s what we do.”",
-    //   " - Abstrak, Skill Methods Crew"
-    // ),
+    new Quote(
+      "“As far as being traditional, it’s not because people say there are set rules for the dance. That’s what we feel. We give respect to people who don’t really do traditional style moves. We give them props also. But that’s what we feel so that’s what we do.”",
+      " - Abstrak, Skill Methods Crew"
+    ),
     new Quote("“B-Boying is for everybody.”", " - Ken Swift, Rock Steady Crew"),
     new Quote(
       "“Back then, everybody just bugged out. There was no certain style. You’re letting yourself out. You’re getting loose.”",
@@ -44,14 +44,14 @@ export class DashboardComponent implements OnInit {
       " - Paranoid Android"
     ),
     new Quote("“BBoying is my air.”", " - BBoy Patron"),
-    // new Quote(
-    //   "“BBoying takes the best from each dance form and makes it it’s own. Similarly to how Bruce Lee took the best from each fighting style and brought into together in his style Jeet Kune Do. You take the best from each to make a new style.”",
-    //   " - BBoy Tailz"
-    // ),
-    // new Quote(
-    //   "“Becoming a good dancer is not just the learning of complicated moves and routines, it’s a philosophy and a way of life. Taking your art and skills to the next level, which is PURE MASTERSHIP, complete confidence within yourself.”",
-    //   " - Greg Campbellock Jr"
-    // ),
+    new Quote(
+      "“BBoying takes the best from each dance form and makes it it’s own. Similarly to how Bruce Lee took the best from each fighting style and brought into together in his style Jeet Kune Do. You take the best from each to make a new style.”",
+      " - BBoy Tailz"
+    ),
+    new Quote(
+      "“Becoming a good dancer is not just the learning of complicated moves and routines, it’s a philosophy and a way of life. Taking your art and skills to the next level, which is PURE MASTERSHIP, complete confidence within yourself.”",
+      " - Greg Campbellock Jr"
+    ),
     new Quote(
       "“Carpenters bend wood; fletchers bend arrows; wise men fashion themselves.”",
       " - Buddha"
@@ -85,10 +85,10 @@ export class DashboardComponent implements OnInit {
       "“Don’t be afraid to battle cats. The only way you’re going to get better is battling the people that are better than you.”",
       " - Poe One"
     ),
-    // new Quote(
-    //   "“Each individual cat got up and did his thing. It wasn’t like today where they come down and put down some nice linoleum so you don’t get burnt up. I mean, we used to b-boy right in the middle of the park with broken glass everywhere! And you’d get up and you’d be all scratched and burised and bleeding and you would be ready to go right back in the circle. You’d just wipe the glass off your elbows and go right back in.”",
-    //   " - Jazzy Jay"
-    // ),
+    new Quote(
+      "“Each individual cat got up and did his thing. It wasn’t like today where they come down and put down some nice linoleum so you don’t get burnt up. I mean, we used to b-boy right in the middle of the park with broken glass everywhere! And you’d get up and you’d be all scratched and burised and bleeding and you would be ready to go right back in the circle. You’d just wipe the glass off your elbows and go right back in.”",
+      " - Jazzy Jay"
+    ),
     new Quote(
       "“Every breaker that is interested in not being a biter or a clone wants to create their own style.”",
       " - BBoy Fresh, LA Breakers"
@@ -126,10 +126,10 @@ export class DashboardComponent implements OnInit {
       "“I taught them everything they know, but not everything I know.”",
       " - James Brown"
     ),
-    // new Quote(
-    //   "“I think new dancers need to understand that foundation is a feeling and you have to adapt it, and it takes time. A breakdancing move like a windmill or a headspin does not make you a BBoy. It takes time, you have to understand it, you need to grow into it. It can be for anyone. Any culture can learn it and be a BBoy.”",
-    //   " - Bam Bam"
-    // ),
+    new Quote(
+      "“I think new dancers need to understand that foundation is a feeling and you have to adapt it, and it takes time. A breakdancing move like a windmill or a headspin does not make you a BBoy. It takes time, you have to understand it, you need to grow into it. It can be for anyone. Any culture can learn it and be a BBoy.”",
+      " - Bam Bam"
+    ),
     new Quote(
       "“I’m not gonna change my way of dance because I lost and the judge tells me I should do it a certain way.”",
       " - Roxrite"
@@ -194,10 +194,10 @@ export class DashboardComponent implements OnInit {
       "“It is not necessary to try to beat or be better than your opponent, but rather to show what you can do. Instead of thinking ‘ok, I can beat this person,’ one should be thinking ‘ok, that’s what you can do, now let me show you what I can do.’ ”",
       " - Alien Ness"
     ),
-    // new Quote(
-    //   "“It was all strictly top-rocking, interesting drops to get down to the floor, incredible blitz-speed footwork. It was actually really unpredictable. Bouncing around, pivoting, turning, twists, front-sweeps, you know? And very aggressive, really aggressive to the point that I thought it was a gang dance at first.”",
-    //   " - Popmaster Fabel"
-    // ),
+    new Quote(
+      "“It was all strictly top-rocking, interesting drops to get down to the floor, incredible blitz-speed footwork. It was actually really unpredictable. Bouncing around, pivoting, turning, twists, front-sweeps, you know? And very aggressive, really aggressive to the point that I thought it was a gang dance at first.”",
+      " - Popmaster Fabel"
+    ),
     new Quote(
       "“It’s not even about moves, it’s about style. You remember me by my energy, not my moves.”",
       " - BBoy Smurf, Zulu Kingz / Boogie Brats"
@@ -268,10 +268,10 @@ export class DashboardComponent implements OnInit {
       "“That’s what you strive for - you strive to take your move to the next level. It’s about shock value, always shock value, but keeping it flavor and stylized and making it yours.”",
       " - Crazy Legs/Rock Steady Crew"
     ),
-    // new Quote(
-    //   "“That’s what’s gonna make me come up with new stuff, if you get a good break or a good beat, you get a certain energy, and you wanna release that energy. Freezes to me are like releasing a certain energy. That’s me releasing energy that beat gives me, to come up with certain things. A good beat, a rare break, a dope song that I’ve never really breaked to before will give me a new feeling, a new movement.”",
-    //   " - Roxrite"
-    // ),
+    new Quote(
+      "“That’s what’s gonna make me come up with new stuff, if you get a good break or a good beat, you get a certain energy, and you wanna release that energy. Freezes to me are like releasing a certain energy. That’s me releasing energy that beat gives me, to come up with certain things. A good beat, a rare break, a dope song that I’ve never really breaked to before will give me a new feeling, a new movement.”",
+      " - Roxrite"
+    ),
     new Quote(
       "“The best lessons come from our losses. With every loss we can gain a lesson through which we come one step closer to perfection.”",
       " - Alien Ness"
@@ -312,10 +312,10 @@ export class DashboardComponent implements OnInit {
       "“The only way you’re gonna get better is battling the people that are better than you.”",
       " - Poe One"
     ),
-    // new Quote(
-    //   "“The style of a b-boy, I never saw nothing like it. I’d never seen a dance approached like that original b-boy flavor, that straightforward, aggressive sort of I’ma-tear-up-this-floor feeling. A lot of times in my neighborhood I didn’t see smiles on their faces. They were on a mission to terrorize the dance floor and to make a reputation, ghetto celebrity style.”",
-    //   " - Popmaster Fabel"
-    // ),
+    new Quote(
+      "“The style of a b-boy, I never saw nothing like it. I’d never seen a dance approached like that original b-boy flavor, that straightforward, aggressive sort of I’ma-tear-up-this-floor feeling. A lot of times in my neighborhood I didn’t see smiles on their faces. They were on a mission to terrorize the dance floor and to make a reputation, ghetto celebrity style.”",
+      " - Popmaster Fabel"
+    ),
     new Quote(
       "“The way you’re gonna battle is you gotta just be yourself.”",
       " - Thesis"
@@ -352,10 +352,10 @@ export class DashboardComponent implements OnInit {
       "“Well a breakdancer is gonna probably have no style and no originality but they probably gonna have some incredible real dynamic s--t that people can’t do because they practice so hard. A BBoy ain’t really gonna care about a dynamic move, they gonna care about a dynamic style.”",
       " - K-Mel"
     ),
-    // new Quote(
-    //   "“What counts most in my book is variety. Going out and doing so much that you just can’t really come back at that with one or two moves. He covered all his basic elements, his toprocks, hit footwork, his powermoves, his freezes. That’s what I look for most of all. Because those are the things that I try to exemplify when I’m dancing myself. I don’t always get that far because it’s quite difficult. But it’s the standard that I strive for and it’s the standard that I think other dancers should strive for because that’s what makes us mature as dancers. Why stick to one or two things when you can have it all?”",
-    //   " - Kujo"
-    // ),
+    new Quote(
+      "“What counts most in my book is variety. Going out and doing so much that you just can’t really come back at that with one or two moves. He covered all his basic elements, his toprocks, hit footwork, his powermoves, his freezes. That’s what I look for most of all. Because those are the things that I try to exemplify when I’m dancing myself. I don’t always get that far because it’s quite difficult. But it’s the standard that I strive for and it’s the standard that I think other dancers should strive for because that’s what makes us mature as dancers. Why stick to one or two things when you can have it all?”",
+      " - Kujo"
+    ),
     new Quote(
       "“When you’re in a perfect circle you’re hitting every beat. The music is pumping right through you. Time ceases to exist. Everybody there is letting their soul out to the music. It’s so bright it’s blinding. You can feel it for miles.”",
       " - BBoy Chicano"
@@ -384,7 +384,7 @@ export class DashboardComponent implements OnInit {
   ];
   sectionHeading: string = "How do you want to get down?";
 
-  currentQuote: {};
+  currentQuote: {quote: string, author: string};
 
   constructor() {}
 
