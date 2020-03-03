@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./log-display.component.scss"]
 })
 export class LogDisplayComponent implements OnInit {
-  @Input() entry: object;
+  @Input() entry: { duration: string, date: string, location: string, victories: any[], challenges: any[] };
   constructor() {}
 
   ngOnInit() {}

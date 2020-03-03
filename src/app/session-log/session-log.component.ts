@@ -17,7 +17,7 @@ export class SessionLogComponent implements OnInit {
   itemValue = "";
   itemList: Observable<any[]>;
   logEntries: any[] = [];
-  selectedEntry: object;
+  selectedEntry : {duration:string, date: string, location: string, victories: any[], challenges: any[]};
 
   //----------
   constructor(public db: AngularFireDatabase) {
@@ -38,7 +38,7 @@ export class SessionLogComponent implements OnInit {
 
   //----------
   handleLogEntryClick = e => {
-    this.selectedEntry = {};
+    this.selectedEntry = {date: '', location: '', duration: '', victories: [], challenges: []};
     let selectedLogTimestamp = parseInt(e.target.dataset.entryDate, 10);
 
     // Using the date from list of log entries, find the corresponding full entry.
