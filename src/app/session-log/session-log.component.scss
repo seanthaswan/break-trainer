@@ -16,6 +16,9 @@
   background-position: center center;
   background-size: 23%;
 
+  @media (max-width: 500px) {
+  }
+
   justify-content: center;
   // background-image: url("../assets/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
   grid-template-columns: 1fr;

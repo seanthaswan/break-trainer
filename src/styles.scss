@@ -5,6 +5,11 @@ html {
   height: 100vh;
 }
 
+html,
+body {
+  overflow: auto;
+}
+
 body,
 app-root {
   display: flex;
@@ -28,7 +33,7 @@ body {
   padding: 10px;
 
   @media (max-width: 500px) {
-    padding: 5px;
+    padding: 0px;
   }
 
   .section-heading {
@@ -42,7 +47,6 @@ body {
 
     @media (max-width: 500px) {
       font-size: 35px;
-
       text-align: center;
     }
   }
