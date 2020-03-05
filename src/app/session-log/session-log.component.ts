@@ -53,6 +53,7 @@ export class SessionLogComponent implements OnInit {
       challenges: [],
       notes: ""
     };
+
     let selectedLogTimestamp = parseInt(e.target.dataset.entryDate, 10);
     let journalDisplay = document.querySelector(".log-display-container");
     let pageWrapper = document.querySelector(".page-wrapper");
