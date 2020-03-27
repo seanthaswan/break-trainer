@@ -1,46 +1,35 @@
-<div class="page-wrapper">
-  <app-header></app-header>
-  <h2 class="section-heading">{{ sectionHeading }}</h2>
-  <div class="middle">
-    <div class="action-card-container">
-      <a
-        class="action-card"
-        [routerLink]="['/logs']"
-        routerLinkActive="router-link-active"
-      >
-        <div>
-          <h3 class="card-title">Session Log</h3>
-          <div class="card-icon">
-            <img src="../../assets/sessionlog.svg" alt="" />
-          </div>
-        </div>
-      </a>
-      <a
-        class="action-card"
-        [routerLink]="['/workout']"
-        routerLinkActive="router-link-active"
-      >
-        <div>
-          <h3 class="card-title">Workouts & Drills</h3>
-          <div class="card-icon">
-            <img src="../../assets/workout.svg" alt="" />
-          </div>
-        </div>
-      </a>
-      <a
-        class="action-card"
-        [routerLink]="['/library']"
-        routerLinkActive="router-link-active"
-      >
-        <div>
-          <h3 class="card-title">Move Library</h3>
-          <div class="card-icon">
-            <img src="../../assets/library.svg" alt="" />
-          </div>
-        </div>
-      </a>
+<div class="feature-links-container">
+  <a
+    class="link"
+    [routerLink]="['/logs']"
+    routerLinkActive="router-link-active"
+  >
+    <div class="link-icon">
+      <img src="../../assets/sessionlog.svg" alt="" />
     </div>
-  </div>
-  
-  <div class="bottom">{{ currentQuote.quote }} {{ currentQuote.author }}</div>
+    <h3 class="link-title">Session Log</h3>
+  </a>
+  <a
+    class="link"
+    [routerLink]="['/workout']"
+    routerLinkActive="router-link-active"
+  >
+    <div class="link-icon">
+      <img src="../../assets/workout.svg" alt="" />
+    </div>
+    <h3 class="link-title">Workouts & Drills</h3>
+  </a>
+  <a
+    class="link"
+    [routerLink]="['/library']"
+    routerLinkActive="router-link-active"
+  >
+    <div class="link-icon">
+      <img src="../../assets/library.svg" alt="" />
+    </div>
+    <h3 class="link-title">Move Library</h3>
+  </a>
 </div>
+
+<div class="content-area"></div>
+<div class="bottom">{{ currentQuote.quote }} {{ currentQuote.author }}</div>

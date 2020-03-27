@@ -1,13 +1,10 @@
 :host {
   display: flex;
 
-  margin-bottom: 25px;
-  padding: 10px;
+  padding: 10px 10vw;
 
   transition: all 0.2s ease;
 
-  color: white;
-  background: rgba(0, 0, 0, 0.8);
   border-bottom: 1px dotted #f9d342;
 
   align-items: center;
@@ -16,44 +13,16 @@
   @media (max-width: 500px) {
     flex-direction: column;
 
-    margin-top: 20px;
-
-    .left {
-      margin-bottom: 10px;
-    }
+    padding: 10px 0px;
   }
 }
 
-.right {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-
-  display: flex;
-  align-items: center;
-  visibility: visible;
-
-  p {
-    margin: 0;
-  }
-
-  @media (max-width: 500px) {
-    flex-direction: column;
+.title {
+  img {
+    width: 120px;
   }
 }
 
-.date-container {
-  display: flex;
-  flex-direction: column;
-
-  margin-right: 15px;
-
-  align-items: flex-end;
-
-  @media (max-width: 500px) {
-    margin: 0;
-
-    align-items: center;
-  }
-}
 
 .user-icon {
   min-width: 30px;
@@ -78,11 +47,5 @@
     width: 60px;
     height: 60px;
     margin: 10px auto;
-  }
-}
-
-.title {
-  img {
-    width: 180px;
   }
 }

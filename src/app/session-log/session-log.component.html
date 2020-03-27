@@ -1,16 +1,27 @@
 <div class="page-wrapper">
-  <app-header></app-header>
   <h2 class="section-heading">{{ sectionHeading }}</h2>
   <div class="journal-container">
     <div class="log-item-container">
       <div class="new-entry-button-container">
-        <button class="plus-button"><img src="../../assets/add.svg" alt=""><span class="up-pointer" *ngIf="true">☝️</span>
-</button>
+        <button class="plus-button">
+          <img src="../../assets/add.svg" alt="" /><span
+            class="up-pointer"
+            *ngIf="true"
+            >☝️</span
+          >
+        </button>
         <p>New Entry</p>
       </div>
       <div class="log-item" *ngIf="true">No entries yet!</div>
-      <div class="log-item" (click)="handleLogEntryClick($event)" *ngFor="let logEntry of logEntries" [attr.data-entry-date]="logEntry.date">
-        <div class="date">{{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}</div>
+      <div
+        class="log-item"
+        (click)="handleLogEntryClick($event)"
+        *ngFor="let logEntry of logEntries"
+        [attr.data-entry-date]="logEntry.date"
+      >
+        <div class="date">
+          {{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}
+        </div>
         <div class="location">{{ logEntry.location }}</div>
       </div>
     </div>
