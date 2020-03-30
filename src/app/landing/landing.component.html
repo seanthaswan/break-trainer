@@ -1,30 +1,19 @@
-<div class="left">
-  <div class="logo"><img src="../../assets/logo-attempt-2.png" alt="" /></div>
-  <!-- <div class="login-container" app-login-form></div> -->
-  <div class="login-form-container">
-    <div class="registered-users-container">
-      <h2>Registered Users</h2>
-      <p>Have an account?</p>
-      <form *ngIf="false" action="" class="form">
-        <input type="text" /> <input type="password" />
-        <input type="submit" value="Log In" />
-      </form>
-      <a class="button sign-in" [routerLink]="'/dashboard'">
-        Sign In
-      </a>
+<div class="hero-brick" [routerLink]="['/dashboard']">
+  <div class="hero-container">
+    <div class="top">
+      <h1>Train Smarter. Get Better.</h1>
+      <h2>The original breaker training companion.</h2>
     </div>
-
-    <div class="new-users-container">
-      <h2>New Users</h2>
-      <p>New to Break Trainer? Create an account to get started.</p>
-      <form *ngIf="false" action="" class="form">
-        <input type="text" /> <input type="password" />
-        <input type="submit" value="Log In" />
-      </form>
-      <a class="button create-account" [routerLink]="'/dashboard'">
-        Create My Account
-      </a>
+    <div class="bottom">
+      <div class="left">
+        <img src="../../assets/header-title.png" alt="" />
+      </div>
+      <div class="right">
+        <a href="/#" class="button">Log In</a>
+        <a href="/#" class="button">Sign Up</a>
+        <a href="/#" class="button">V</a>
+      </div>
     </div>
   </div>
 </div>
-<div class="right"></div>
+<div class="feature-brick"></div>

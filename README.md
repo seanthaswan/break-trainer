@@ -31,3 +31,4 @@ As a dancer who is hyper-aware of sports injuries and the importance of safe mov
 Breakdance Nav Logo by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com/)
 Icons made by Freepik from www.flaticon.com
 BG Stock photos by Wallace Chuck from Pexels [Link](https://www.pexels.com/cs-cz/foto/break-dance-dav-energie-festival-2820898/)
+Hero Photo by Felipe Silveira from Pexels

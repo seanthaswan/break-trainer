@@ -4,13 +4,12 @@
   </a>
 </div>
 <div class="right">
-  <div class="date-container">
-    <!-- <p class="date">
-      {{ today | date: "MMM dd, yyyy" }}
-      {{ today ? "" : "Getting the time..." }}
-    </p>
-    <p class="time">{{ today | date: "hh:mm aa" }}</p> -->
-  </div>
+  <a class="nav-link" [routerLink]="['/profile']">
+    <p>about</p>
+  </a>
+  <a class="nav-link" [routerLink]="['/profile']">
+    <p>contact us</p>
+  </a>
   <a class="user-icon" [routerLink]="['/profile']">
     <img src="../../assets/user-icon.svg" alt="" />
   </a>
