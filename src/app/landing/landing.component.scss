@@ -1,6 +1,8 @@
 :host {
-  height: 100%;
   overflow-y: scroll;
+
+  height: 100%;
+
   background: black;
 
   &.hidden {
@@ -11,118 +13,151 @@
 .hero-brick {
   display: flex;
 
-  justify-content: center;
-
-  flex: 1;
   height: 95vh;
   /* The image used */
-  background: radial-gradient(rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)), url(../../assets/group-hero.jpg);
 
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets/group-hero.jpg);
+  background-repeat: no-repeat;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center bottom;
-  background-repeat: no-repeat;
   background-size: cover;
+
+  justify-content: center;
+  flex: 1;
 }
 
-
 .hero-container {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, .5) 100%);
-  padding: 40px;
-  border-radius: 4px;
-  margin-top: 30vh;
-  margin-bottom: auto;
-  height: auto;
   display: flex;
   flex-direction: column;
 
-  align-items: center;
+  height: auto;
+  margin-top: 30vh;
+  margin-bottom: auto;
+  padding: 20px;
 
   text-align: center;
 
+  border-radius: 4px;
+  background: white;
+  background-color: #fff;
+  background-image: url(http://www.transparenttextures.com/patterns/white-brick-wall.png);
 
+  align-items: center;
 
-  @media screen and (max-width: 730px) {
-    margin-top: 15vh;
+  @media screen and (max-width: 400px) {
+    margin-top: 0;
+    padding: 20px 5px;
 
+    border-radius: 0;
   }
 
   .top {
-    color: white;
-    text-shadow: 0px 0px 6px black;
+    margin-bottom: 20px;
+
+    color: black;
 
     h1 {
-      font-size: 50px;
+      font-size: 30px;
       font-weight: bold;
+
+      margin-bottom: 5px;
     }
 
     h2 {
-      font-size: 22px;
-
+      font-size: 18px;
     }
 
+    @media screen and (max-width: 400px) {
+      margin-bottom: 5px;
+    }
   }
 
   .bottom {
+    display: flex;
 
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
 
-    align-items: center;
-
-    padding: 10px;
     border-radius: 3px;
 
-    @media screen and (max-width: 730px) {
+    justify-content: space-around;
+    align-items: center;
+
+    .left,
+    .right {
+      display: flex;
       flex-direction: column;
-      align-items: initial;
-      width: 100%;
+    }
+
+    .left {
+      width: 55%;
     }
 
     .right {
-      display: flex;
-      flex: 1;
-      width: 290px;
-      max-width: 290px;
-      margin: 0 auto;
-      flex-direction: column;
+      width: 40%;
     }
 
     a.button {
-      background: rgba(0, 0, 0, 0.7);
+      font-size: 13px;
+      font-weight: 500;
+
       display: inline-block;
-      padding: 0.35em 1.2em;
-      border: 0.1em solid #FFFFFF;
-      margin: 0 0.3em 0.3em 0;
-      border-radius: 0.12em;
+
       box-sizing: border-box;
-      text-decoration: none;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
-      color: #FFFFFF;
+      margin-bottom: 5px;
+      padding: 8px 0;
+
+      transition: all 0.2s ease;
       text-align: center;
-      transition: all 0.2s;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      color: #000;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.2);
+
+      &.login {
+        border: 1px solid #add3ec;
+        background: #add3ec;
+        &:hover {
+          color: #000;
+          border: 1px dashed #add3ec;
+          background-color: #c1e6ff;
+        }
+      }
+
+      &.signup {
+        border: 1px solid #add3ec;
+        background: white;
+
+        &:hover {
+          color: #000;
+          border: 1px dashed #add3ec;
+          background-color: #eee;
+        }
+      }
     }
 
-    a.button:hover {
-      color: #000000;
-      background-color: #FFFFFF;
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+
+      width: 100%;
+
+      .left {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      .right {
+        width: 80%;
+      }
     }
-
-
   }
 }
 
-
-.divider {
-  width: 60%;
-  margin: 0 auto;
-  border-top: 2px solid black;
-}
-
-.feature-brick {
-  background: url(../../assets/topography.png) center center repeat;
-  height: 500px;
-}
+// .feature-brick {
+//   height: 500px;
+//
+//   background: url(../../assets/topography.png) center center repeat;
+// }

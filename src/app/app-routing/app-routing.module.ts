@@ -12,20 +12,13 @@ const routes: Routes = [
     component: LandingComponent
   },
   {
-    path: "dashboard",
-    component: DashboardComponent
-  },
-  {
-    path: "logs",
-    component: SessionLogComponent
-  },
-  {
-    path: "workout",
-    component: WorkoutComponent
-  },
-  {
-    path: "library",
-    component: LibraryComponent
+    path: "app",
+    component: DashboardComponent,
+    children: [
+      { path: "session-log", component: SessionLogComponent },
+      { path: "train", component: WorkoutComponent },
+      { path: "move-library", component: LibraryComponent }
+    ]
   }
 ];
 

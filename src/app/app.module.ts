@@ -18,6 +18,7 @@ import { AngularFireModule } from "angularfire2";
 // for AngularFireDatabase
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { environment } from "../environments/environment";
+import { FeatureNavComponent } from './header/feature-nav/feature-nav.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { environment } from "../environments/environment";
     SessionLogComponent,
     WorkoutComponent,
     LibraryComponent,
-    LogDisplayComponent
+    LogDisplayComponent,
+    FeatureNavComponent
   ],
   imports: [
     BrowserModule,
