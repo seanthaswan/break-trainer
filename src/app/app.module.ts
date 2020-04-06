@@ -18,7 +18,13 @@ import { AngularFireModule } from "angularfire2";
 // for AngularFireDatabase
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { environment } from "../environments/environment";
-import { FeatureNavComponent } from './header/feature-nav/feature-nav.component';
+import { FeatureNavComponent } from "./header/feature-nav/feature-nav.component";
+import { OverviewComponent } from "./dashboard/overview/overview.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatCardModule } from "@angular/material/card";
+import { MatChipsModule } from "@angular/material/chips";
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
   declarations: [
@@ -33,15 +39,20 @@ import { FeatureNavComponent } from './header/feature-nav/feature-nav.component'
     WorkoutComponent,
     LibraryComponent,
     LogDisplayComponent,
-    FeatureNavComponent
+    FeatureNavComponent,
+    OverviewComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatChipsModule,
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

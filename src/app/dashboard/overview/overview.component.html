@@ -1,0 +1,42 @@
+<h1 class="dashboard-title">Dashboard</h1>
+<h2 class="dashboard-heading">Overview</h2>
+
+<mat-card class="encouragement-container">
+  <div class="top">
+    <div class="text">
+      <p>That's whats up, Sean!</p>
+      <p>
+        You've just begun training smarter! Keep putting in the hard work and
+        you'll see it all come together.
+      </p>
+    </div>
+    <div class="time-with-app-container">
+      <p>3</p>
+      <p>Days</p>
+    </div>
+  </div>
+  <p>
+    Try using the
+    <span class="chip" [routerLink]="['/app/session-log']">Session Log</span>
+    after a night of cyphering and reflect on your victories, your challenges,
+    or just make a note about how thing went.
+  </p>
+  <p>
+    Putting together a workout is made easy with BreakHQ. Check out
+    <span class="chip" [routerLink]="['/app/train']">Worksout & Drills</span>
+    when you want to get into grind mode and sharpen your skills.
+  </p>
+  <p>
+    What kind of moves do you have under your belt? The
+    <span class="chip" [routerLink]="['/app/move-library']">Move Library</span>
+    is a place to log what you know and organize what you may need to work on.
+  </p>
+</mat-card>
+<h2 class="dashboard-heading">Quote of the Moment</h2>
+
+<mat-card class="quote">
+  {{ currentQuote.quote }}
+  <mat-card-footer class="quote-author" align="end">
+    {{ currentQuote.author }}
+  </mat-card-footer>
+</mat-card>

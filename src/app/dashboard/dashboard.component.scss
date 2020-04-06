@@ -1,15 +1,11 @@
-:host {
-  display: flex;
-  flex: 1;
+:host
+{
+    display: flex;
+    flex: 1;
+    // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  // background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-  background-color: #fff;
-  background-image: url(http://www.transparenttextures.com/patterns/white-brick-wall.png);
-
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  background-position: center center;
+    background-color: #fff;
+    background-image: url(http://www.transparenttextures.com/patterns/white-brick-wall.png);
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-position: center center;
 }

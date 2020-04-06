@@ -32,3 +32,6 @@ Breakdance Nav Logo by [Freepik](https://www.flaticon.com/authors/freepik) from 
 Icons made by Freepik from www.flaticon.com
 BG Stock photos by Wallace Chuck from Pexels [Link](https://www.pexels.com/cs-cz/foto/break-dance-dav-energie-festival-2820898/)
 Hero Photo by Felipe Silveira from Pexels
+Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

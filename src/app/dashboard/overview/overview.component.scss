@@ -1,0 +1,65 @@
+:host
+{
+    padding: 10px 10vw;
+}
+
+.encouragement-container
+{
+    display: flex;
+    flex-direction: column;
+
+    .top
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .time-with-app-container
+    {
+        font-size: 24px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        max-height: 100px;
+        margin-left: 5px;
+        padding: 0 30px;
+
+        text-align: center;
+
+        border: 1px solid #ddd;
+
+        p
+        {
+            margin: 0;
+        }
+    }
+}
+
+.chip
+{
+    font-size: 15px;
+    font-weight: bold;
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+    transition: all .2s ease;
+
+    border-radius: 15px;
+    background: #eee;
+
+    &:hover
+    {
+        background: #ddd;
+    }
+}
+
+.quote-author
+{
+    padding: 10px 15px;
+}

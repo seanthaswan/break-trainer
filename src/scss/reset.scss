@@ -1,13 +1,16 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Open Sans", "IBM Plex Sans", sans-serif;
+html
+{
+    font-family: 'Roboto Condensed', 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+
+    box-sizing: border-box;
 }
 
 *,
 *:before,
-*:after {
-  box-sizing: inherit;
+*:after
+{
+    box-sizing: inherit;
 }
 
 body,
@@ -18,40 +21,52 @@ h4,
 h5,
 h6,
 p ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+ul
+{
+    font-weight: normal;
+
+    margin: 0;
+    padding: 0;
 }
 
-ul {
-  list-style: none;
+ul
+{
+    list-style: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+img
+{
+    max-width: 100%;
+    height: auto;
 }
 
-button {
-  display: inline-block;
-  border: none;
-  padding: 0.5rem 2rem;
-  margin: 0;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+button
+{
+    font-family: sans-serif;
+    font-size: 1rem;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: .5rem 2rem;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    border: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
 }
 
-button:focus {
-  outline: 4px solid rgb(34, 42, 159);
-  outline-offset: -4px;
+button:focus
+{
+    outline: 4px solid rgb(34, 42, 159);
+    outline-offset: -4px;
 }
 
-button:active {
-  transform: scale(0.99);
+button:active
+{
+    transform: scale(.99);
 }
