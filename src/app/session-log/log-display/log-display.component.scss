@@ -1,1 +1,115 @@
+:host
+{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
 
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: rgba(247, 249, 250, .8);
+}
+
+.log-display
+{
+    position: relative;
+
+    display: flex;
+    overflow-y: scroll;
+    flex: 1;
+    flex-direction: column;
+
+    height: 100%;
+    padding: 20px;
+
+    button
+    {
+        font-size: 11px;
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        padding: 7px 15px;
+
+        text-transform: uppercase;
+
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+}
+
+
+.log-header
+{
+    font-size: 24px;
+
+    padding: 10px 0;
+
+
+    .bottom
+    {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+
+        .log-duration
+        {
+            font-size: 15px;
+
+            img
+            {
+                width: 14px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px)
+    {
+        text-align: center;
+
+        .bottom
+        {
+            display: block;
+
+            .log-duration
+            {
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+
+mat-divider
+{
+    margin-bottom: 10px;
+}
+
+.log-lists
+{
+    display: grid;
+
+    margin-bottom: 10px;
+
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+
+    .list-heading,
+    .list-description
+    {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 650px)
+    {
+        grid-template-columns: 100%;
+    }
+}
+
+.notes
+{
+    flex: 1;
+}

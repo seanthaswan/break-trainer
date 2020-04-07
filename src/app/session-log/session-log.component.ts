@@ -8,7 +8,7 @@ import { Observable, ObservableLike } from "rxjs";
 @Component({
   selector: "app-session-log",
   templateUrl: "./session-log.component.html",
-  styleUrls: ["./session-log.component.scss"]
+  styleUrls: ["./session-log.component.scss"],
 })
 export class SessionLogComponent implements OnInit {
   title: string = "Session Log";
@@ -32,8 +32,8 @@ export class SessionLogComponent implements OnInit {
     // ... Then we create the observable for that reference.
     // ... Then we subscribe and process the data.
     this.itemList = db.list(`posts/${this.username}`).valueChanges();
-    this.itemList.subscribe(res => {
-      res.forEach(i => {
+    this.itemList.subscribe((res) => {
+      res.forEach((i) => {
         this.logEntries.push(i);
       });
       console.log(this.logEntries);
@@ -44,26 +44,21 @@ export class SessionLogComponent implements OnInit {
   ngOnInit() {}
 
   //----------
-  handleLogEntryClick = e => {
+  handleLogEntryClick = (e) => {
     this.selectedEntry = {
       date: "",
       location: "",
       duration: "",
       victories: [],
       challenges: [],
-      notes: ""
+      notes: "",
     };
 
     let selectedLogTimestamp = parseInt(e.target.dataset.entryDate, 10);
-    let journalDisplay = document.querySelector(".log-display-container");
-    let pageWrapper = document.querySelector(".page-wrapper");
     let sessionLogContainer = document.querySelector("app-session-log");
-    let journalDisplayOffsetTop = journalDisplay.scrollTop;
-    let sessionLogScrollTop = sessionLogContainer.scrollTop;
-    journalDisplay.classList.add("display-active");
 
     // Using the date from list of log entries, find the corresponding full entry.
-    this.logEntries.map(entry => {
+    this.logEntries.map((entry) => {
       if (entry.date === selectedLogTimestamp) {
         let parsedDuration = this.parseDuration(entry.duration);
         this.selectedEntry = entry;
@@ -75,29 +70,42 @@ export class SessionLogComponent implements OnInit {
 
   //----------
   parseDuration(duration) {
+    let newDuration: string;
+
     if (!duration.includes(":")) {
       return duration;
     }
 
+    // Duration comes in as a string like "1:30:00"
+    // We want to pick that apart and label the hours and minutes
+    // And then at the end we throw away the seconds
     let oldDuration = duration.split(":");
 
+    // Determines if the number of hours is plural or singular
     oldDuration[0] =
       parseInt(oldDuration[0], 10) > 1
-        ? (oldDuration[0] += "hrs")
-        : (oldDuration[0] += "hr");
+        ? (oldDuration[0] += "hrs ")
+        : (oldDuration[0] += "hr ");
 
+    // Single digit hours are padded with 0, we want to remove that 0.
     oldDuration[0] = this.stripLeadingZero(oldDuration[0]);
 
+    // Determines if the number of minutes is singular or plural
     oldDuration[1] =
       parseInt(oldDuration[1], 10) > 1
         ? (oldDuration[1] += "mins")
         : (oldDuration[1] += "min");
 
+    // Single digit minutes are padded with 0, we want to remove that 0.
     oldDuration[1] = this.stripLeadingZero(oldDuration[1]);
 
+    // Remove the seconds
     oldDuration.pop();
 
-    return oldDuration.join("");
+    newDuration = oldDuration.join("");
+
+    // Give us back the new duration string.
+    return newDuration;
   }
 
   //----------

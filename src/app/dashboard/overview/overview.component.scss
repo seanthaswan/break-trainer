@@ -1,12 +1,14 @@
 :host
 {
-    padding: 10px 10vw;
+    padding: 25px 10vw;
 }
 
 .encouragement-container
 {
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 20px;
 
     .top
     {
@@ -30,6 +32,7 @@
         text-align: center;
 
         border: 1px solid #ddd;
+        border-radius: 3px;
 
         p
         {

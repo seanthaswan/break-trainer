@@ -18,10 +18,10 @@
       *ngFor="let logEntry of logEntries"
       [attr.data-entry-date]="logEntry.date"
     >
+      <div class="location">{{ logEntry.location }}</div>
       <div class="date">
         {{ logEntry.date | date: "MMM dd, yyyy hh:mm aa" }}
       </div>
-      <div class="location">{{ logEntry.location }}</div>
     </div>
   </div>
   <app-log-display [entry]="selectedEntry"></app-log-display>
